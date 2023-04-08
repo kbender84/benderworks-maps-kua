@@ -14,7 +14,33 @@
     "verified": "10",
     "maximum": "10"
   },
-  "url": "https://github.com/kbender84/coriolis-kbender-ai-art-pack",
+    "relationships": {
+    "requires": [
+      {
+        "id": "Levels",
+        "type": "module",
+        "manifest": "https://github.com/theripper93/Levels/releases/latest/download/module.json"
+      },
+	  {
+        "id": "stairways",
+        "type": "module",
+        "manifest": "https://gitlab.com/SWW13/foundryvtt-stairways/-/raw/main/module.json"
+      }
+    ]
+  },
+
+	"packs": [
+		{
+		  "name": "benderworks-maps-kua",
+		  "label": "Coriolis kbender scenes",
+		  "path": "data/benderworks-maps-kua.db",
+		  "entity": "Scene",
+		  "module": "benderworks-maps-kua",
+		  "type": "Scene",
+		  "private": false
+		}
+	],
+  "url": "https://github.com/kbender84/benderworks-maps-kua",
   "manifest": "https://github.com/kbender84/benderworks-maps-kua/releases/download/1/module.json",
   "download": "https://github.com/kbender84/benderworks-maps-kua/releases/download/1/benderworks-maps-kua.zip"
   
